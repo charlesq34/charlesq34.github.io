@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Frustum PointNets</title>
+<link rel="SHORTCUT ICON" href="favicon.ico"/>
+<link href='css/paperstyle.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div class="pageTitle">
+  Frustum PointNets for 3D Object Detection from RGB-D Data<br>
+  <br>
+  <span class = "Authors">
+        <a href="http://www.stanford.edu/~rqi" target="_blank">Charles R. Qi</a><sup>1</sup> &nbsp; &nbsp;
+        <a href="http://www.cs.unc.edu/~wliu/" target="_blank">Wei Liu</a><sup>2</sup>&nbsp; &nbsp;
+        <a href="http://www.cs.cornell.edu/~chenxiawu/" target="_blank">Chenxia Wu</a><sup>2</sup>&nbsp; &nbsp;
+        <a href="http://ai.stanford.edu/~haosu/" target="_blank">Hao Su</a><sup>3</sup> &nbsp; &nbsp;
+        <a href="http://geometry.stanford.edu/member/guibas/" target="_blank">Leonidas J. Guibas</a><sup>1</sup> &nbsp; &nbsp;<br>
+        <sup>1</sup><a href = "http://www.stanford.edu" target="_blank">Stanford University</a> &nbsp; &nbsp; <sup>2</sup><a href="http://nuro.ai" target="_blank">Nuro Inc.</a> &nbsp; &nbsp; <sup>3</sup><a href="http://ucsd.edu" target="_blank">UC San Diego</a><br><br>
+	Conference on Computer Vision and Pattern Recognition (CVPR) 2018
+  </span>
+  </div>
+
+<br>
+<div class = "material">
+        <a href="https://arxiv.org/abs/1711.08488" target="_blank">[arXiv version]</a> <a href="https://github.com/charlesq34/frustum-pointnets" target="_blank">[Code on GitHub]</a> [Slides (TBA)]
+</div>
+
+  <img class = "bannerImage" src="images/teaser.jpg", width="500"><br>
+  <table width="600" align="center"><tr><td><p class = "figureTitleText">Figure 1. <b>3D object detection.</b> Given RGB-D data, we first generate 2D object region proposals in the RGB image using a CNN. Each 2D region is then extruded to a 3D viewing frustum in which we get a point cloud from depth data. Finally, our frustum PointNet predicts a (oriented and amodal) 3D bounding box for the object from the points in frustum. </p></td></tr></table>
+
+  <div class = "abstractTitle">
+  Abstract
+  </div>
+  <p class = "abstractText">
+  In this work, we study 3D object detection from RGB- D data in both indoor and outdoor scenes. While previous methods focus on images or 3D voxels, often obscuring nat- ural 3D patterns and invariances of 3D data, we directly operate on raw point clouds by popping up RGB-D scans. However, a key challenge of this approach is how to effi- ciently localize objects in point clouds of large-scale scenes (region proposal). Instead of solely relying on 3D propos- als, our method leverages both mature 2D object detec- tors and advanced 3D deep learning for object localization, achieving efficiency as well as high recall for even small ob- jects. Benefited from learning directly in raw point clouds, our method is also able to precisely estimate 3D bound- ing boxes even under strong occlusion or with very sparse points. Evaluated on KITTI and SUN RGB-D 3D detection benchmarks, our method outperforms the state of the art by remarkable margins while having real-time capability.
+ </p>
+
+  <br>
+  <div class = "abstractTitle">
+  Frustum PointNets for 3D Object Detection
+  </div>
+
+  <img class = "bannerImage" src="images/pipeline.jpg" width="800"><br>
+  <table width="800" align="center"><tr><td><p class = "figureTitleText">Figure 2. <b>Pipeline of Frustum PointNets for 3D object detection.</b> We first leverage a 2D CNN object detector to propose 2D regions and classify their content. 2D regions are then lifted to 3D and thus become frustum proposals. Given a point cloud in a frustum (n × c with n points and c channels of XYZ, intensity etc. for each point), the object instance is segmented by binary classification of each point. Based on the segmented object point cloud (m × c), a light-weight regression PointNet (T-Net) tries to align points by translation such that their centroid is close to amodal box center. At last the box estimation net estimates the amodal 3D bounding box for the object. </p></td></tr></table>
+  
+  <img class = "bannerImage" src="images/coordinate.jpg" width="600"><br>
+  <table width="700" align="center"><tr><td><p class = "figureTitleText">Figure 3. <b>Coordinate systems for point cloud.</b> A series of coordinate normalizations is key to our model's success. Point cloud by its nature is determined largely by XYZ values of the points, so it is critical to choose a ''good'' coordinate system. By our both non-parametric and network-based transformations, we are moving the points into more and more canonical spaces, which has a great positive effect on learning.  </p></td></tr></table>
+  <br>
+
+  <div class = "abstractTitle">
+  3D Object Detection Results
+  </div>
+
+  <img class = "bannerImage" src="images/results.jpg" width="600"><br>
+  <table width="750" align="center"><tr><td><p class = "figureTitleText">Figure 4. <b>Visualizations of Frustum PointNet results on KITTI val set.</b> Top wide figure displays an RGB image with detected 2D bounding boxes; bottom square figure shows the LiDAR point cloud of the same frame, with predicted 3D bounding boxes. 3D instance masks on point cloud are shown in color. True positive detection boxes are in green, while false positive boxes are in red and groundtruth boxes in blue are shown for false positive and false negative cases. Digit and letter beside each box denote instance id and semantic class, with ``v'' for cars, ``p'' for pedestrian and ``c'' for cyclist. </p></td></tr></table>
+
+  <img class = "bannerImage" src="images/sunrgbd_viz.jpg" width="600"><br>
+  <table width="750" align="center"><tr><td><p class = "figureTitleText">Figure 5. <b>Visualization of Frustum PointNets results on SUN-RGBD val set.</b> First row: RGB image with 2D detection boxes. Second row: point cloud popped up from depth map and predicted amodal 3D bounding boxes (the numbers beside boxes correspond to 2D boxes on images). Green boxes are true positive. Red boxes are false positives. False negatives are not visualized. Third row: point cloud popped up from depth map and ground truth amodal 3D bounding boxes. </p></td></tr></table>
+  </body></html>

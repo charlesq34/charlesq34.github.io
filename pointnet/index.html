@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>PointNet</title>
+<link rel="SHORTCUT ICON" href="favicon.ico"/>
+<link href='css/paperstyle.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div class="pageTitle">
+  PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation<br>
+  <br>
+  <span class = "Authors">
+        <a href="http://www.stanford.edu/~rqi" target="_blank">Charles R. Qi</a><sup>*</sup> &nbsp; &nbsp;
+        <a href="http://ai.stanford.edu/~haosu/" target="_blank">Hao Su</a><sup>*</sup> &nbsp; &nbsp;
+        <a href="http://cs.stanford.edu/~kaichun/" target="_blank">Kaichun Mo</a> &nbsp; &nbsp;
+        <a href="http://geometry.stanford.edu/member/guibas/" target="_blank">Leonidas J. Guibas</a> &nbsp; &nbsp;<br>
+        <a href = "http://www.stanford.edu" target="_blank"> Stanford University </a><br><br>
+	Conference on Computer Vision and Pattern Recognition (CVPR) 2017
+  </span>
+  </div>
+
+<br>
+<div class = "material">
+        <a href="http://arxiv.org/abs/1612.00593" target="_blank">[arXiv version]</a> <a href="https://github.com/charlesq34/pointnet" target="_blank">[Code on GitHub]</a> <a href="https://www.youtube.com/watch?v=Cge-hot0Oc0">[Presentation video]</a> <a href="docs/cvpr17_pointnet_slides.pdf">[Slides]</a>
+</div>
+
+  <img class = "bannerImage" src="images/teaser.jpg", width="500"><br>
+  <table width="600" align="center"><tr><td><p class = "figureTitleText">Figure 1. <b>Applications of PointNet.</b> We propose a novel deep net architecture that consumes raw point cloud (set of points) without voxelization or rendering. It is a unified architecture that learns both global and local point features, providing a simple, efficient and effective approach for a number of 3D recognition tasks.</p></td></tr></table>
+
+  <div class = "abstractTitle">
+  Abstract
+  </div>
+  <p class = "abstractText">
+  Point cloud is an important type of geometric data structure. Due to its irregular format, most researchers transform such data to regular 3D voxel grids or collections of images. This, however, renders data unnecessarily voluminous and causes issues. In this paper, we design a novel type of neural network that directly consumes point clouds, which well respects the permutation invariance of points in the input.  Our network, named PointNet, provides a unified architecture for applications ranging from object classification, part segmentation, to scene semantic parsing. Though simple, PointNet is highly efficient and effective. Empirically, it shows strong performance on par or even better than state of the art. Theoretically, we provide analysis towards understanding of what the network has learnt and why the network is robust with respect to input perturbation and corruption.
+  </p>
+
+  <br>
+  <div class = "abstractTitle">
+  PointNet Architecture
+  </div>
+  <p class = "abstractText">
+  To deal with unordered input set, key to our approach is the use of a single <i>symmetric function</i>, max pooling. Effectively the network learns a set of optimization functions/criteria that select interesting or informative points of the point cloud and encode the reason for their selection. The final fully connected layers of the network aggregate these learnt optimal values into the global descriptor for the entire shape as mentioned above (shape classification) or are used to predict per point labels (shape segmentation). 
+  Our input format is easy to apply rigid or affine transformations to, as each point transforms independently. Thus we can add a data-dependent spatial transformer network that attempts to canonicalize the data before the PointNet processes them, so as to further improve the results.
+  </p>
+
+  <img class = "bannerImage" src="images/pointnet.jpg" width="800"><br>
+  <table width="800" align="center"><tr><td><p class = "figureTitleText">Figure 2. <b>PointNet architecture.</b> The classification network takes <i>n</i> points as input, applies input and feature transformations, and then aggregates point features by max pooling. The output is classification score for <i>m</i> classes. The segmentation network is an extension to the classification net. It concatenates global and local features and outputs per point scores. <i>mlp</i> stands for multi-layer perceptron, the numbers in bracket are its layer sizes. Batchnorm is used for all layers with ReLU. Dropout layers are used for the last mlp in classification net.</p></td></tr></table>
+  
+  <br>
+  <div class = "abstractTitle">
+  Object Part Segmentation Results
+  </div>
+
+  <img class = "bannerImage" src="images/segres.jpg"><table width="750" align="center"><tr><td><p class = "figureTitleText">Figure 3. <b>Part Segmentation Results.</b>  We visualize the CAD part segmentation results across all 16 object categories. We show both results for partial simulated Kinect scans (left block) and complete ShapeNet CAD models (right block).</p></td></tr></table>
+
+  <br>
+  <div class = "abstractTitle">
+  Semantic Segmentation Results
+  </div>
+
+  <img class = "bannerImage" src="images/semantic.jpg" width="750"><table width="750" align="center"><tr><td><p class = "figureTitleText">Figure 4. <b>Semantic Segmentation Results.</b>  Top row is input point cloud with color. Bottom row is output semantic segmentation result (on points) displayed in the same camera viewpoint as input.</p></td></tr></table>
+
+   
+  <br>
+  <div class = "abstractTitle">
+  Visualizing What PointNet has Learnt
+  </div>
+
+  <img class = "bannerImage" src="images/kernels.jpg" width="500"><table width="750" align="center"><tr><td><p class = "figureTitleText">Figure 5. <b>Point function visualization.</b> Our network learns a collection of point function that selects representative/critical points from an input point cloud. Here, we randomly pick 15 point functions from the 1024 functions in our model and visualize the activation regions for them.</p></td></tr></table>
+  <br>
+  <img class = "bannerImage" src="images/kp_ss_visu1.jpg" width="600"><table width="750" align="center"><tr><td><p class = "figureTitleText">Figure 6. <b>Visualizing Critical Points and Shape Upper-bound.</b> The first row shows the input point clouds. The second row show the <i>critical points</i> picked by our PointNet. The third row shows the upper-bound shape for the input -- any input point sets that falls between the critical point set and the upper-bound set will result in the same classification result.</p></td></tr></table>
+
+
+
+</body></html>

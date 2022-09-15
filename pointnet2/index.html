@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>PointNet++</title>
+<link rel="SHORTCUT ICON" href="favicon.ico"/>
+<link href='css/paperstyle.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div class="pageTitle">
+  PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space<br>
+  <br>
+  <span class = "Authors">
+        <a href="http://www.stanford.edu/~rqi" target="_blank">Charles R. Qi</a> &nbsp; &nbsp;
+        <a href="http://cs.stanford.edu/~ericyi/" target="_blank">Li Yi</a> &nbsp; &nbsp;
+        <a href="http://ai.stanford.edu/~haosu/" target="_blank">Hao Su</a> &nbsp; &nbsp;
+        <a href="http://geometry.stanford.edu/member/guibas/" target="_blank">Leonidas J. Guibas</a> &nbsp; &nbsp;<br>
+        <a href = "http://www.stanford.edu" target="_blank"> Stanford University </a><br><br>
+	Conference on Neural Information Processing Systems (NIPS) 2017
+  </span>
+  </div>
+
+<br>
+<div class = "material">
+        <a href="https://arxiv.org/abs/1706.02413" target="_blank">[arXiv version]</a> <a href="https://github.com/charlesq34/pointnet2" target="_blank">[Code and Data (GitHub)]</a> 
+</div>
+
+  <img class = "bannerImage" src="images/pnpp.jpg", width="800"><br>
+  <table width="800" align="center"><tr><td><p class = "figureTitleText">Figure 1. <b>PointNet++ Architecture for Point Set Segmentation and Classification.</b> We introduce a type of novel neural network, named as PointNet++, to process a set of points sampled in a metric space in a hierarchical fashion (2D points in Euclidean space are used for this illustration). The general idea of PointNet++ is simple. We first partition the set of points into overlapping local regions by the distance metric of the underlying space. Similar to CNNs, we extract local features capturing fine geometric structures from small neighborhoods; such local features are further grouped into larger units and processed to produce higher level features. This process is repeated until we obtain the features of the whole point set. </p></td></tr></table>
+
+  <div class = "abstractTitle">
+  Abstract
+  </div>
+  <p class = "abstractText">
+  Few prior works study deep learning on point sets. PointNet by Qi et al. is a pioneer in this direction. However, by design PointNet does not capture local structures induced by the metric space points live in, limiting its ability to recognize fine-grained patterns and generalizability to complex scenes. In this work, we introduce a hierarchical neural network that applies PointNet recursively on a nested partitioning of the input point set. By exploiting metric space distances, our network is able to learn local features with increasing contextual scales. With further observation that point sets are usually sampled with varying densities, which results in greatly decreased performance for networks trained on uniform densities, we propose novel set learning layers to adaptively combine features from multiple scales. Experiments show that our network called PointNet++ is able to learn deep point set features efficiently and robustly. In particular, results significantly better than state-of-the-art have been obtained on challenging benchmarks of 3D point clouds.
+</p>
+
+  <div class = "abstractTitle">
+  Visualizing of 3D Point Cloud Features Learnt
+  </div>
+<img class = "bannerImage" src="images/features.jpg" width="500"><table width="750" align="center"><tr><td><p class = "figureTitleText">Figure 2. <b>Visualization of Point Cloud Patterns Learned from PointNet++.</b> Patterns learnt from 20 (out of the 1,024) neurons in the first level are shown. We visualize the point cloud patterns learnt by searching for point clouds (in unit sphere) that activate the neurons the most. Since The model is trained for ModelNet40 shape classification which contains mostly furniture, we see clear structures of planes, double planes, lines, corners etc. Color in figure indicates point depth (red is near, blue is far).</p></td></tr></table>
+
+</p></td></tr></table>
+</body></html>
