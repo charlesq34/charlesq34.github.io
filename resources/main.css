@@ -6,7 +6,7 @@ a:hover {text-decoration:none; color:#990000}*/
 a:hover {text-decoration:underline; color: #8C1515; }*/
 a {text-decoration : none}
 a:hover {text-decoration:underline; color: #990000; }
-body {background-color:#ffffff}
+body {background-color:#ffffff; }
 
 .active {font-weight:bold}
 .inactive {color:gray}
