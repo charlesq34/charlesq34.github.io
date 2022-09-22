@@ -20,7 +20,7 @@ body {
 <td>
 <div style="font-size:24; font-weight:bold">Charles Ruizhongtai Qi</div>
 <div>
-Research Scientist<br/>
+Staff Research Scientist<br/>
 Waymo LLC<br/>
 Mountain View, CA<br/>
 </div>
@@ -70,8 +70,9 @@ My research focuses on deep learning, computer vision and 3D. I have developed n
 <div class="section">
 <h3>News</h3>
 <ul>
-<li> <b style="color: green; background-color: #ffff42">NEW</b> 2021/10: One paper accepted to Neurips 2021.
-<li> <b style="color: green; background-color: #ffff42">NEW</b> 2021/6: Two papers accepted to ICCV 2021 (Semantic Point Generation and the Motion Dataset).
+<li> <b style="color: green; background-color: #ffff42">NEW</b> 2022/5: Our lidar data compression paper RIDDLE was accepted to CVPR 2022.
+<li> 2021/10: One paper accepted to Neurips 2021.
+<li> 2021/6: Two papers accepted to ICCV 2021 (Semantic Point Generation and the Motion Dataset).
 <li> 2021/3: Our offboard 3D detection (3D Auto Labeling) paper has been accepted to CVPR 2021.
 <li> 2020/7: Our PointContrast paper has been accepted by ECCV 2020.
 <li> 2020/3: Our ImVoteNet paper has been accepted by CVPR 2020.
@@ -100,6 +101,44 @@ My research focuses on deep learning, computer vision and 3D. I have developed n
 <div class="mainsection">
 <h3>Publications</h3>
 <table width="100%">
+
+<!-- Lidar RIDDLE -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/riddle.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/pdf/2206.01738.pdf">RIDDLE: Lidar Data Compression with Range Image Deep Delta Encoding</a></b>, <i>CVPR 2022</i><br>
+Xuanyu Zhou*, <b>Charles R. Qi</b>*, Yin Zhou, Dragomir Anguelov (*: equal contribution)<br>
+
+<p>As LiDAR sensors become more powerful (higher resolutions), the data storage and transmission costs grow quickly. This paper proposes a state-of-the-art method for LiDAR range image compression.</p>
+
+<a href="https://arxiv.org/pdf/2206.01738.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('RIDDLE'))">bibtex</a>
+<br><br>
+<pre><p id="RIDDLE" style="font:18px; display: none">
+@inproceedings{zhou2022riddle,
+  title={RIDDLE: Lidar Data Compression with Range Image Deep Delta Encoding},
+  author={Zhou, Xuanyu and Qi, Charles R and Yin, Zhou and Anguelov, Dragomir},
+  journal={Proc. Computer Vision and Pattern Recognition (CVPR), IEEE},
+  year={2022}
+}
+
+<!-- MultiClass -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/multi_class.jpg" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/pdf/2205.05703.pdf">Multi-Class 3D Object Detection with Single-Class Supervision</a></b>, <i>ICRA 2022</i><br>
+Mao Ye, Chenxi Liu, Maoqing Yao, Weiyue Wang, Zhaoqi Leng, <b>Charles R. Qi</b>, Dragomir Anguelov<br>
+
+<p>Train multi-class 3D object detectors with single-class labels on disjoint data samples (e.g. some frames have labels for vehicles and some frames have labels for pedestrians).</p>
+
+<a href="https://arxiv.org/pdf/2205.05703.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('MULTI_CLASS'))">bibtex</a>
+<br><br>
+<pre><p id="MULTI_CLASS" style="font:18px; display: none">
+@article{ye2022multi,
+  title={Multi-Class 3D Object Detection with Single-Class Supervision},
+  author={Ye, Mao and Liu, Chenxi and Yao, Maoqing and Wang, Weiyue and Leng, Zhaoqi and Qi, Charles R and Anguelov, Dragomir},
+  journal={arXiv preprint arXiv:2205.05703},
+  year={2022}
+}
 
 <!-- Egocentric -->
 <tr>
