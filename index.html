@@ -67,7 +67,7 @@ My research focuses on deep learning, computer vision and 3D. I have developed n
 <b>Waymo Research is hiring several interns for Summer 2023.</b> If you are based in the U.S. and have strong research background in computer vision, robotics and deep learning, or know any such candidates, please send me an email!
 </p>
 
-<p><b style="color: green; background-color: #ffff42">NEW</b> We have 4 papers accepted to ECCV 2022 (details coming soon). See you there in Tel Aviv!</p>
+<p><b style="color: green; background-color: #ffff42">NEW</b> We have 4 papers accepted to ECCV 2022. See you in Tel Aviv!</p>
 </div>
 
 
@@ -108,52 +108,88 @@ My research focuses on deep learning, computer vision and 3D. I have developed n
 <table width="100%">
 
 <!-- LESS -->
-<!--
 <tr>
-<td width="25%" valign="top"><p><img src="papers/ECCV_2022_logo.png" width="125" alt="" style="border-style: none" align="top"></p></td>
+<td width="25%" valign="top"><p><img src="papers/less.png" width="250" alt="" style="border-style: none" align="top"></p></td>
 <td width="75%" valign="top"><p>
-<b><a href="https://www.charlesrqi.com">LESS: Label-Efficient Semantic Segmentation for LiDAR Point Clouds</a></b>, <font color="#d22d1d">Oral Presentation</font>, <i>ECCV 2022</i><br>
+<b><a href="https://arxiv.org/abs/2210.08064">LESS: Label-Efficient Semantic Segmentation for LiDAR Point Clouds</a></b>, <font color="#d22d1d">Oral Presentation</font>, <i>ECCV 2022</i><br>
 Minghua Liu, Yin Zhou, <b>Charles R. Qi</b>, Boqing Gong, Hao Su, Dragomir Anguelov<br>
 
-<p><i>Details coming soon...</i></p>
+<p>Dense segmentation labels are very costly to acquire especially for 3D point clouds. This work proposes a new labeling and model training pipeline to learn 3D semantic segmentation of Lidar points with less human labeling.</p>
+
+<a href="https://arxiv.org/pdf/2210.08064.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('LESS'))">bibtex</a>
 <br><br>
--->
+<pre><p id="LESS" style="font:18px; display: none">
+@article{liu2022less,
+  title={LESS: Label-Efficient Semantic Segmentation for LiDAR Point Clouds},
+  author={Liu, Minghua and Zhou, Yin and Qi, Charles R and Gong, Boqing and Su, Hao and Anguelov, Dragomir},
+  journal={arXiv preprint arXiv:2210.08064},
+  year={2022}
+}
+
+<br><br>
 
 <!-- REM -->
-<!--
 <tr>
-<td width="25%" valign="top"><p><img src="papers/ECCV_2022_logo.png" width="125" alt="" style="border-style: none" align="top"></p></td>
+<td width="25%" valign="top"><p><img src="papers/rem.png" width="250" alt="" style="border-style: none" align="top"></p></td>
 <td width="75%" valign="top"><p>
-<b><a href="https://www.charlesrqi.com">Improving the Intra-class Long-tail in 3D Detection via Rare Example Mining</a></b>, <i>ECCV 2022</i><br>
+<b><a href="https://arxiv.org/abs/2210.08375">Improving the Intra-class Long-tail in 3D Detection via Rare Example Mining</a></b>, <i>ECCV 2022</i><br>
 Chiyu (Max) Jiang, Mahyar Najibi, <b>Charles R. Qi</b>, Yin Zhou, Dragomir Anguelov<br>
 
-<p><i>Details coming soon...</i></p>
+<p>Continued improvement of machine learning models is critical for practical use cases. While previous works focus on hard example mining, in this study, we identify a new conceptual dimension - rareness - to mine new data for improving the long-tail performance of models.</p>
+
+<a href="https://arxiv.org/pdf/2210.08375.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('REM'))">bibtex</a>
 <br><br>
--->
+<pre><p id="REM" style="font:18px; display: none">
+@article{jiang2022improving,
+  title={Improving the Intra-class Long-tail in 3D Detection via Rare Example Mining},
+  author={Jiang, Chiyu Max and Najibi, Mahyar and Qi, Charles R and Zhou, Yin and Anguelov, Dragomir},
+  journal={arXiv preprint arXiv:2210.08375},
+  year={2022}
+}
+
+<br><br>
 
 <!-- OP4 -->
-<!--
 <tr>
-<td width="25%" valign="top"><p><img src="papers/ECCV_2022_logo.png" width="125" alt="" style="border-style: none" align="top"></p></td>
+<td width="25%" valign="top"><p><img src="papers/op4.png" width="250" alt="" style="border-style: none" align="top"></p></td>
 <td width="75%" valign="top"><p>
-<b><a href="https://www.charlesrqi.com">Motion Inspired Unsupervised Perception and Prediction in Autonomous Driving</a></b>, <i>ECCV 2022</i><br>
+<b><a href="https://arxiv.org/abs/2210.08061">Motion Inspired Unsupervised Perception and Prediction in Autonomous Driving</a></b>, <i>ECCV 2022</i><br>
 Mahyar Najibi, Jingwei Ji, Yin Zhou, <b>Charles R. Qi</b>, Xinchen Yan, Scott Ettinger, Dragomir Anguelov<br>
 
-<p><i>Details coming soon...</i></p>
+<p>This work is one of the first steps towards building autonomous systems that does not require human supervision. We propose to use motion flows as cues to auto label moving objects in driving scenes and then learn from those auto labels to detect and predict motions of the objects.</p>
+
+<a href="https://arxiv.org/pdf/2210.08061.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('OP4'))">bibtex</a>
 <br><br>
--->
+<pre><p id="OP4" style="font:18px; display: none">
+@article{najibi2022motion,
+  title={Motion Inspired Unsupervised Perception and Prediction in Autonomous Driving},
+  author={Najibi, Mahyar and Ji, Jingwei and Zhou, Yin and Qi, Charles R and Yan, Xinchen and Ettinger, Scott and Anguelov, Dragomir},
+  journal={arXiv preprint arXiv:2210.08061},
+  year={2022}
+}
+
+<br><br>
 
 <!-- LidarNAS -->
-<!--
 <tr>
-<td width="25%" valign="top"><p><img src="papers/ECCV_2022_logo.png" width="125" alt="" style="border-style: none" align="top"></p></td>
+<td width="25%" valign="top"><p><img src="papers/lidarnas.png" width="250" alt="" style="border-style: none" align="top"></p></td>
 <td width="75%" valign="top"><p>
-<b><a href="https://www.charlesrqi.com">LidarNAS: Unifying and Searching Neural Architectures for 3D Point Clouds</a></b>, <i>ECCV 2022</i><br>
+<b><a href="https://arxiv.org/abs/2210.05018">LidarNAS: Unifying and Searching Neural Architectures for 3D Point Clouds</a></b>, <i>ECCV 2022</i><br>
 Chenxi Liu, Zhaoqi Leng, Pei Sun, Shuyang Cheng, <b>Charles R. Qi</b>, Yin Zhou, Mingxing Tan, Dragomir Anguelov<br>
 
-<p><i>Details coming soon...</i></p>
+<p>This paper proposes a unified framework for NAS of deep nets for 3D point clouds, providing novel perspectives to understand the relationships among many popular network architectures.</p>
+
+<a href="https://arxiv.org/pdf/2210.05018.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('LidarNAS'))">bibtex</a>
 <br><br>
--->
+<pre><p id="LidarNAS" style="font:18px; display: none">
+@article{liu2022lidarnas,
+  title={LidarNAS: Unifying and Searching Neural Architectures for 3D Point Clouds},
+  author={Liu, Chenxi and Leng, Zhaoqi and Sun, Pei and Cheng, Shuyang and Qi, Charles R and Zhou, Yin and Tan, Mingxing and Anguelov, Dragomir},
+  journal={arXiv preprint arXiv:2210.05018},
+  year={2022}
+}
+
+<br><br>
 
 <!-- Lidar RIDDLE -->
 <tr>
