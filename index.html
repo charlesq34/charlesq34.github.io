@@ -63,7 +63,7 @@ I am a research scientist at <a href="http://waymo.com" target="_blank">Waymo</a
 My research focuses on deep learning, computer vision and 3D. I have developed novel deep learning architectures for 3D data (point clouds, volumetric grids and multi-view images) that have wide applications in 3D object classification, object part segmentation, semantic scene parsing, scene flow estimation and 3D reconstruction. Those deep architectures have been well adopted by both academic and industrial groups across the world. I have also invented several state-of-the-art methods for 3D object recognition, which reinforce current and future applications in augmented reality and robotics. My more recent interests are on scalable and data-efficient perception and data-driven simulation. If you are interested in my research or have any use cases to share, feel free to contact me!
 </p>
 
-<p><b style="color: green; background-color: #ffff42">NEW</b> We have 4 papers accepted to ECCV 2022. See you in Tel Aviv!</p>
+<p><b style="color: green; background-color: #ffff42">NEW</b> We have 3 papers accepted to CVPR 2023. See you in Vancouver!</p>
 </div>
 
 
@@ -102,6 +102,72 @@ My research focuses on deep learning, computer vision and 3D. I have developed n
 <div class="mainsection">
 <h3>Publications</h3>
 <table width="100%">
+
+<!-- MODAR -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/modar.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/pdf/2306.03206">MoDAR: Using Motion Forecasting for 3D Object Detection in Point Cloud Sequences</a></b>, <i>CVPR 2023</i><br>
+Yingwei Li*, <b>Charles R. Qi</b>*, Yin Zhou, Chenxi Liu, Dragomir Anguelov<br> (*: equal contribution)
+
+<p>We propose a novel method to efficiently leverage long-term temporal sequences for 3D object detection. Our method, MoDAR, uses motion forecasting outputs as a type of virtual modality, to augment LiDAR point clouds. It is widely applicable to any point cloud based detectors.</p>
+
+<a href="https://arxiv.org/pdf/2306.03206.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('MODAR'))">bibtex</a>
+<br><br>
+<pre><p id="MODAR" style="font:18px; display: none">
+@inproceedings{li2023modar,
+  title={MoDAR: Using Motion Forecasting for 3D Object Detection in Point Cloud Sequences},
+  author={Li, Yingwei and Qi, Charles R and Zhou, Yin and Liu, Chenxi and Anguelov, Dragomir},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={9329--9339},
+  year={2023}
+}
+
+
+<br><br>
+<!-- GINA -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/gina.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/2304.02163">GINA-3D: Learning to Generate Implicit Neural Assets in the Wild
+</a></b>, <i>CVPR 2023</i><br>
+Bokui Shen, Xinchen Yan, <b>Charles R. Qi</b>, Mahyar Najibi, Boyang Deng, Leonidas Guibas, Yin Zhou, Dragomir Anguelov
+
+<p>We propose a generative model (using tri-plane NeRF, VQGAN and auto-regressive models) that leverages real-world driving data from camera and LiDAR sensors to create realistic 3D implicit neural assets of diverse vehicles and pedestrians. Compared to prior work, GINA-3D tackles the real world challenges of occlusions, lighting-variations and long-tail distributions.</p>
+
+<a href="https://arxiv.org/pdf/2304.02163.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('GINA'))">bibtex</a> / dataset (coming soon)
+<br><br>
+<pre><p id="GINA" style="font:18px; display: none">
+@inproceedings{shen2023gina,
+  title={GINA-3D: Learning to Generate Implicit Neural Assets in the Wild},
+  author={Shen, Bokui and Yan, Xinchen and Qi, Charles R and Najibi, Mahyar and Deng, Boyang and Guibas, Leonidas and Zhou, Yin and Anguelov, Dragomir},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4913--4926},
+  year={2023}
+}
+
+<br><br>
+<!-- NERDI -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/nerdi.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/2212.03267">NeRDi: Single-View NeRF Synthesis with Language-Guided Diffusion as General Image Priors</a></b>, <i>CVPR 2023</i><br>
+Congyue Deng, Chiyu Max Jiang, <b>Charles R. Qi</b>, Xinchen Yan, Yin Zhou, Leonidas Guibas, Dragomir Anguelov
+
+<p>NeRDi is a single-view NeRF synthesis framework using general image priors from 2D diffusion models. Off-the-shelf vision-language models are used for a two-section language guidance as conditioning inputs to the diffusion model, which helps improve multiview content coherence.</p>
+
+<a href="https://arxiv.org/pdf/2212.03267.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('NERDI'))">bibtex</a>
+<br><br>
+<pre><p id="NERDI" style="font:18px; display: none">
+@inproceedings{deng2023nerdi,
+  title={Nerdi: Single-view nerf synthesis with language-guided diffusion as general image priors},
+  author={Deng, Congyue and Jiang, Chiyu and Qi, Charles R and Yan, Xinchen and Zhou, Yin and Guibas, Leonidas and Anguelov, Dragomir and others},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={20637--20647},
+  year={2023}
+}
+
+<br><br>
 
 <!-- LESS -->
 <tr>
