@@ -58,13 +58,11 @@ which.style.display="block"
 
 <div class="section">
 <p>
-I am a research scientist at <a href="http://waymo.com" target="_blank">Waymo</a>, leading a team that develops ML algorithms for autonomous driving, with a focus on 3D perception and data-driven simulation. Before that I was a postdoctoral researcher at Facebook AI Research (FAIR). I received my Ph.D. from <a href="http://stanford.edu" target="_blank">Stanford University</a> (<a href="http://ai.stanford.edu" target="_blank">Stanford AI Lab</a> and <a href="https://geometry.stanford.edu" target="_blank">Geometric Computation Group</a>), advised by Professor <a href="http://geometry.stanford.edu/member/guibas/index.html" target="_blank">Leonidas J. Guibas</a>. Prior to joining Stanford, I got my B.Eng. from <a href="http://www.tsinghua.edu.cn" target="_blank">Tsinghua University</a>. <br/><br/>
+I am a research scientist and manager at <a href="http://waymo.com" target="_blank">Waymo</a>, leading a team that built the perception foundation models for the next-gen perception system at Waymo. I also worked on 3D perception, auto labeling and data-driven simulation, with 15+ publications at top-tier conferences, multiple patents and successful launches. Before that I was a postdoctoral researcher at Facebook AI Research (FAIR). I received my Ph.D. from <a href="http://stanford.edu" target="_blank">Stanford University</a> (<a href="http://ai.stanford.edu" target="_blank">Stanford AI Lab</a> and <a href="https://geometry.stanford.edu" target="_blank">Geometric Computation Group</a>), advised by Professor <a href="http://geometry.stanford.edu/member/guibas/index.html" target="_blank">Leonidas J. Guibas</a>. Prior to joining Stanford, I got my B.Eng. from <a href="http://www.tsinghua.edu.cn" target="_blank">Tsinghua University</a>. <br/><br/>
 
-My research focuses on deep learning, computer vision and 3D. I have developed novel deep learning architectures for 3D data (point clouds, volumetric grids and multi-view images) that have wide applications in 3D object classification, object part segmentation, semantic scene parsing, scene flow estimation and 3D reconstruction. Those deep architectures have been well adopted by both academic and industrial groups across the world. I have also invented several state-of-the-art methods for 3D object recognition, which reinforce current and future applications in augmented reality and robotics. My more recent interests are on scalable and data-efficient perception and data-driven simulation. If you are interested in my research or have any use cases to share, feel free to contact me!
+My research focuses on deep learning, computer vision and 3D. I have developed novel deep learning architectures for 3D data (point clouds, volumetric grids and multi-view images) that have wide applications in 3D object classification, object part segmentation, semantic scene parsing, scene flow estimation and 3D reconstruction. Those deep architectures have been well adopted by both academic and industrial groups across the world. I have also invented several state-of-the-art methods for 3D object recognition, which reinforce current and future applications in augmented reality and robotics. At Waymo I developed scalable and data-efficient perception and data-driven simulation for both onboard and offboard use cases. My recent interest is on connecting foundation models to embodied AI and perception. If you are interested in my research or have any use cases to share, feel free to contact me!
 </p>
 
-<p><b style="color: green; background-color: #ffff42">NEW</b> We have 3 papers accepted to CVPR 2023. See you in Vancouver!</p>
-</div>
 
 
 <!--
@@ -102,6 +100,27 @@ My research focuses on deep learning, computer vision and 3D. I have developed n
 <div class="mainsection">
 <h3>Publications</h3>
 <table width="100%">
+
+<!-- VLM -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/vlm.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/pdf/2309.14491">Unsupervised 3D Perception with 2D Vision-Language Distillation for Autonomous Driving</a></b>, <i>ICCV 2023</i><br>
+Mahyar Najibi, Jingwei Ji, Yin Zhou, <b>Charles R. Qi</b>, Xinchen Yan, Scott Ettinger, Dragomir Anguelov<br>
+
+<p>Leveraging Vision-Language Models for open-set 3D object detection. One of the first applications of VLM for autonomous driving perception.</p>
+
+<a href="https://arxiv.org/pdf/2309.14491.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('VLM'))">bibtex</a>
+<br><br>
+<pre><p id="VLM" style="font:18px; display: none">
+@inproceedings{najibi2023unsupervised,
+  title={Unsupervised 3d perception with 2d vision-language distillation for autonomous driving},
+  author={Najibi, Mahyar and Ji, Jingwei and Zhou, Yin and Qi, Charles R and Yan, Xinchen and Ettinger, Scott and Anguelov, Dragomir},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={8602--8612},
+  year={2023}
+}
+
 
 <!-- MODAR -->
 <tr>
@@ -728,11 +747,15 @@ Hao Su<sup>*</sup>, <b>Charles R. Qi</b><sup>*</sup>, Yangyan Li, Leonidas J. Gu
 <div class="section">
 <h3>Experiences</h3>
 <ul>
-<li>2019.10 - Present: Research Scientist at Waymo.</li>
+<li>2019.10 - Present: Research Scientist and Manager at Waymo.</li>
 <li>2018.10 - 2019.9: Postdoctoral researcher at Facebook AI Research.</li>
 <li>2017.6 - 2017.9: Software engineer intern at Nuro Inc. (an AI and robotics startup)</li>
 <li>2016.6 - 2016.9: Software engineer intern at Google[x] (self-driving car team)</li>
 <li>2012.11 - 2013.5: Research intern at Microsoft Research Asia</li>
+</ul>
+
+<ul>
+<li>Area Chair of ICCV 2023, 3DV 2024.</li>
 </ul>
 </div>
 <br>
@@ -818,5 +841,5 @@ Our teaching experience has been summarized into a paper: <a href="papers/ee264_
 
 
 <hr/>
-<div id="footer" style="font-size:10">Charles Ruizhongtai Qi <i>Last updated: Sep, 2022</i></div>
+<div id="footer" style="font-size:10">Charles Ruizhongtai Qi <i>Last updated: Jan, 2024</i></div>
 </body>
