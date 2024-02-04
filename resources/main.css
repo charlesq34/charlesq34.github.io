@@ -129,6 +129,17 @@ body {
     padding-left: 20px;
     grid-column: span 6;
 }
+@media (max-width: 991px) {
+    #dpic {
+      grid-column: span 11;
+      text-align: center;
+    }
+    #ddesc {
+      grid-column: span 11;
+      padding-top: 20px;
+      text-align: center;
+    }
+}
 .desc {
     grid-column: span 10;
     vertical-align: top;
@@ -182,14 +193,5 @@ h2 {
         max-width: 300px;
     }
 }
-@media (max-width: 991px) {
-    #dpic {
-      grid-column: span 12;
-      text-align: center;
-    }
-    #ddesc {
-      grid-column: span 12;
-      padding-top: 20px;
-      text-align: center;
-    }
-}
+
+
