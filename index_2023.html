@@ -1,0 +1,844 @@
+<style>
+body {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+</style>
+
+<head>
+<title>Charles Ruizhongtai Qi</title>
+<link rel="stylesheet" type="text/css" href="resources/main.css">
+</head>
+
+<body>
+
+<table>
+<tr>
+<td><img src="resources/rqi_2022.png" width="200"></td>
+<td>
+<div style="font-size:24; font-weight:bold">Charles Ruizhongtai Qi</div>
+<div>
+Staff Research Scientist<br/>
+Waymo LLC<br/>
+Mountain View, CA<br/>
+</div>
+<div>
+<b>Email:</b> rqi [at] stanford [dot] edu<br>
+</div>
+<div>
+<br>
+<a href="#publications">[Publications]</a>&nbsp;
+<a href="#education">[Education]</a>&nbsp;
+<a href="#experiences">[Experiences]</a>&nbsp;
+<a href="#talks">[Talks]</a>&nbsp;
+<a href="misc.html">[Misc]</a>&nbsp;
+<br>
+<a href="https://scholar.google.com/citations?user=4jODkxsAAAAJ&hl=en" target="_blank">[Google Scholar]</a>&nbsp;
+<a href="https://github.com/charlesq34" target="_blank">[GitHub]</a>&nbsp;
+<a href="https://www.linkedin.com/in/charles-ruizhongtai-qi-53a43739" target="_blank">[LinkedIn]</a>
+</div>
+</td>
+</tr>
+</table>
+
+<script type="text/javascript">
+function hideshow(which){
+if (!document.getElementById)
+return
+if (which.style.display=="block")
+which.style.display="none"
+else
+which.style.display="block"
+}
+</script>
+
+
+
+<div class="section">
+<p>
+I am a research scientist and manager at <a href="http://waymo.com" target="_blank">Waymo</a>. I am currently leading a team to build the perception foundation models for our next-gen perception system. Previouly at Waymo, I worked on 3D perception, auto labeling and data-driven simulation, with 15+ publications at top-tier conferences, multiple patents and successful launches. Before that I was a postdoctoral researcher at Facebook AI Research (FAIR). I received my Ph.D. from <a href="http://stanford.edu" target="_blank">Stanford University</a> (<a href="http://ai.stanford.edu" target="_blank">Stanford AI Lab</a> and <a href="https://geometry.stanford.edu" target="_blank">Geometric Computation Group</a>), advised by Professor <a href="http://geometry.stanford.edu/member/guibas/index.html" target="_blank">Leonidas J. Guibas</a>. Prior to joining Stanford, I got my B.Eng. from <a href="http://www.tsinghua.edu.cn" target="_blank">Tsinghua University</a>. <br/><br/>
+
+My research focuses on deep learning, computer vision and 3D. I have developed novel deep learning architectures for 3D data (point clouds, volumetric grids and multi-view images) that have wide applications in 3D object classification, object part segmentation, semantic scene parsing, scene flow estimation and 3D reconstruction. Those deep architectures have been well adopted by both academic and industrial groups across the world. I have also invented several state-of-the-art methods for 3D object recognition, which reinforce current and future applications in augmented reality and robotics. At Waymo I developed scalable and data-efficient perception and data-driven simulation for both onboard and offboard use cases. My recent interest is on connecting foundation models to embodied AI and perception. If you are interested in my research or have any use cases to share, feel free to contact me!
+</p>
+
+
+
+<!--
+<div class="section">
+<h3>News</h3>
+<ul>
+<li> <b style="color: green; background-color: #ffff42">NEW</b> 2022/5: Our lidar data compression paper RIDDLE was accepted to CVPR 2022.
+<li> 2021/10: One paper accepted to Neurips 2021.
+<li> 2021/6: Two papers accepted to ICCV 2021 (Semantic Point Generation and the Motion Dataset).
+<li> 2021/3: Our offboard 3D detection (3D Auto Labeling) paper has been accepted to CVPR 2021.
+<li> 2020/7: Our PointContrast paper has been accepted by ECCV 2020.
+<li> 2020/3: Our ImVoteNet paper has been accepted by CVPR 2020.
+<li> 2019/10: The VoteNet paper was selected as a <a href="http://iccv2019.thecvf.com/program/main_conference">Best Paper Award Nominee</a> in ICCV 2019!
+<li> 2019/8: VoteNet 3D object detector code released! Check it out <a href="https://github.com/facebookresearch/votenet">here</a>.
+<li> 2019/7: Three papers accepted to ICCV 2019 (1 oral, 2 posters).
+<li> 2019/3: Two papers accepted to CVPR 2019.
+<li> 2018/9: Graduated from Stanford University! Check my Ph.D. dissertation <a href="https://searchworks.stanford.edu/view/12741586">here</a>. 
+<li> 2018/6: One paper accepted to ICML 2018! We are proposing a new way to parallelize training of deep convolutional networks.
+<li> 2018/3: Our Frustum PointNets work is accepted to CVPR 2018! Code released <a href="https://github.com/charlesq34/frustum-pointnets">here</a>.</li>
+<li>December, 2017. will be going to NIPS 2017 at Long Beach to present our work PointNet++ (hierarchical deep feature learning on point sets). A first round of code and data release of the project can be found in our GitHub repo: <a href="https://github.com/charlesq34/pointnet2">pointnet2</a></li>
+<li>July 2017. I have two papers (PointNet as <b>oral</b> and Shape Completion as <b>spotlight oral</b>) on 3D deep learning accepted to CVPR 2017! Our initial release of code and data for PointNet can be found on GitHub <a href="https://github.com/charlesq34/pointnet">pointnet</a></li>
+<li>July 2017. We are going to organize the <a href="http://3ddl.stanford.edu">3D Deep Learning</a> tutorial at CVPR 2017 in Honolulu, Hawaii.</li>
+<li>August, 2016. Our paper "FPNN: Field Probing Neural Networks for 3D Data" is accepted to NIPS 2016! This paper explores a novel deep architecture for 3D volume data.</li>
+<li>March, 2016. Our paper "Volumetric and Multi-view CNN for Object Classification on 3D Data" is accepted in CVPR16 as <b>spotlight oral</b>!</li> Our code for 3D CNN training is on GitHub <a href="https://github.com/charlesq34/3dcnn.torch">3dcnn.torch</a></li>
+<li>September, 2015. "Render for CNN" work accepted in ICCV15 for <b>oral presentation</b>. Our <a href="http://github.com/shapenet/RenderForCNN">code and model</a> have been released.</li>
+<li>August, 2015. "Joint Embedding" work accepted in SIGGRAPH Asia 15 for. Check out our <a href="http://geometry.stanford.edu/projects/jointembedding/">project page</a>.</li>
+<li>June, 2015. I will be attending CVPR 2015 at Boston, June 7-12. See you there!</li>
+</ul>
+</div>
+-->
+
+<br>
+
+<a name="publications"></a>
+<div class="mainsection">
+<h3>Publications</h3>
+<table width="100%">
+<!-- VLM -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/vlm.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/pdf/2309.14491">Unsupervised 3D Perception with 2D Vision-Language Distillation for Autonomous Driving</a></b>, <i>ICCV 2023</i><br>
+Mahyar Najibi, Jingwei Ji, Yin Zhou, <b>Charles R. Qi</b>, Xinchen Yan, Scott Ettinger, Dragomir Anguelov<br>
+
+<p>Leveraging Vision-Language Models for open-set 3D object detection. One of the first applications of VLM for autonomous driving perception.</p>
+
+<a href="https://arxiv.org/pdf/2309.14491.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('VLM'))">bibtex</a>
+<br><br>
+<pre><p id="VLM" style="font:18px; display: none">
+@inproceedings{najibi2023unsupervised,
+  title={Unsupervised 3d perception with 2d vision-language distillation for autonomous driving},
+  author={Najibi, Mahyar and Ji, Jingwei and Zhou, Yin and Qi, Charles R and Yan, Xinchen and Ettinger, Scott and Anguelov, Dragomir},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={8602--8612},
+  year={2023}
+}
+
+
+<!-- MODAR -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/modar.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/pdf/2306.03206">MoDAR: Using Motion Forecasting for 3D Object Detection in Point Cloud Sequences</a></b>, <i>CVPR 2023</i><br>
+Yingwei Li*, <b>Charles R. Qi</b>*, Yin Zhou, Chenxi Liu, Dragomir Anguelov<br> (*: equal contribution)
+
+<p>We propose a novel method to efficiently leverage long-term temporal sequences for 3D object detection. Our method, MoDAR, uses motion forecasting outputs as a type of virtual modality, to augment LiDAR point clouds. It is widely applicable to any point cloud based detectors.</p>
+
+<a href="https://arxiv.org/pdf/2306.03206.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('MODAR'))">bibtex</a>
+<br><br>
+<pre><p id="MODAR" style="font:18px; display: none">
+@inproceedings{li2023modar,
+  title={MoDAR: Using Motion Forecasting for 3D Object Detection in Point Cloud Sequences},
+  author={Li, Yingwei and Qi, Charles R and Zhou, Yin and Liu, Chenxi and Anguelov, Dragomir},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={9329--9339},
+  year={2023}
+}
+
+
+<br><br>
+<!-- GINA -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/gina.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/2304.02163">GINA-3D: Learning to Generate Implicit Neural Assets in the Wild
+</a></b>, <i>CVPR 2023</i><br>
+Bokui Shen, Xinchen Yan, <b>Charles R. Qi</b>, Mahyar Najibi, Boyang Deng, Leonidas Guibas, Yin Zhou, Dragomir Anguelov
+
+<p>We propose a generative model (using tri-plane NeRF, VQGAN and auto-regressive models) that leverages real-world driving data from camera and LiDAR sensors to create realistic 3D implicit neural assets of diverse vehicles and pedestrians. Compared to prior work, GINA-3D tackles the real world challenges of occlusions, lighting-variations and long-tail distributions.</p>
+
+<a href="https://arxiv.org/pdf/2304.02163.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('GINA'))">bibtex</a> / dataset (coming soon)
+<br><br>
+<pre><p id="GINA" style="font:18px; display: none">
+@inproceedings{shen2023gina,
+  title={GINA-3D: Learning to Generate Implicit Neural Assets in the Wild},
+  author={Shen, Bokui and Yan, Xinchen and Qi, Charles R and Najibi, Mahyar and Deng, Boyang and Guibas, Leonidas and Zhou, Yin and Anguelov, Dragomir},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4913--4926},
+  year={2023}
+}
+
+<br><br>
+<!-- NERDI -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/nerdi.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/2212.03267">NeRDi: Single-View NeRF Synthesis with Language-Guided Diffusion as General Image Priors</a></b>, <i>CVPR 2023</i><br>
+Congyue Deng, Chiyu Max Jiang, <b>Charles R. Qi</b>, Xinchen Yan, Yin Zhou, Leonidas Guibas, Dragomir Anguelov
+
+<p>NeRDi is a single-view NeRF synthesis framework using general image priors from 2D diffusion models. Off-the-shelf vision-language models are used for a two-section language guidance as conditioning inputs to the diffusion model, which helps improve multiview content coherence.</p>
+
+<a href="https://arxiv.org/pdf/2212.03267.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('NERDI'))">bibtex</a>
+<br><br>
+<pre><p id="NERDI" style="font:18px; display: none">
+@inproceedings{deng2023nerdi,
+  title={Nerdi: Single-view nerf synthesis with language-guided diffusion as general image priors},
+  author={Deng, Congyue and Jiang, Chiyu and Qi, Charles R and Yan, Xinchen and Zhou, Yin and Guibas, Leonidas and Anguelov, Dragomir and others},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={20637--20647},
+  year={2023}
+}
+
+<br><br>
+
+<!-- LESS -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/less.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/2210.08064">LESS: Label-Efficient Semantic Segmentation for LiDAR Point Clouds</a></b>, <font color="#d22d1d">Oral Presentation</font>, <i>ECCV 2022</i><br>
+Minghua Liu, Yin Zhou, <b>Charles R. Qi</b>, Boqing Gong, Hao Su, Dragomir Anguelov<br>
+
+<p>Dense segmentation labels are very costly to acquire especially for 3D point clouds. This work proposes a new labeling and model training pipeline to learn 3D semantic segmentation of Lidar points with less human labeling.</p>
+
+<a href="https://arxiv.org/pdf/2210.08064.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('LESS'))">bibtex</a>
+<br><br>
+<pre><p id="LESS" style="font:18px; display: none">
+@article{liu2022less,
+  title={LESS: Label-Efficient Semantic Segmentation for LiDAR Point Clouds},
+  author={Liu, Minghua and Zhou, Yin and Qi, Charles R and Gong, Boqing and Su, Hao and Anguelov, Dragomir},
+  journal={arXiv preprint arXiv:2210.08064},
+  year={2022}
+}
+
+<br><br>
+
+<!-- REM -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/rem.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/2210.08375">Improving the Intra-class Long-tail in 3D Detection via Rare Example Mining</a></b>, <i>ECCV 2022</i><br>
+Chiyu (Max) Jiang, Mahyar Najibi, <b>Charles R. Qi</b>, Yin Zhou, Dragomir Anguelov<br>
+
+<p>Continued improvement of machine learning models is critical for practical use cases. While previous works focus on hard example mining, in this study, we identify a new conceptual dimension - rareness - to mine new data for improving the long-tail performance of models.</p>
+
+<a href="https://arxiv.org/pdf/2210.08375.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('REM'))">bibtex</a>
+<br><br>
+<pre><p id="REM" style="font:18px; display: none">
+@article{jiang2022improving,
+  title={Improving the Intra-class Long-tail in 3D Detection via Rare Example Mining},
+  author={Jiang, Chiyu Max and Najibi, Mahyar and Qi, Charles R and Zhou, Yin and Anguelov, Dragomir},
+  journal={arXiv preprint arXiv:2210.08375},
+  year={2022}
+}
+
+<br><br>
+
+<!-- OP4 -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/op4.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/2210.08061">Motion Inspired Unsupervised Perception and Prediction in Autonomous Driving</a></b>, <i>ECCV 2022</i><br>
+Mahyar Najibi, Jingwei Ji, Yin Zhou, <b>Charles R. Qi</b>, Xinchen Yan, Scott Ettinger, Dragomir Anguelov<br>
+
+<p>This work is one of the first steps towards building autonomous systems that does not require human supervision. We propose to use motion flows as cues to auto label moving objects in driving scenes and then learn from those auto labels to detect and predict motions of the objects.</p>
+
+<a href="https://arxiv.org/pdf/2210.08061.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('OP4'))">bibtex</a>
+<br><br>
+<pre><p id="OP4" style="font:18px; display: none">
+@article{najibi2022motion,
+  title={Motion Inspired Unsupervised Perception and Prediction in Autonomous Driving},
+  author={Najibi, Mahyar and Ji, Jingwei and Zhou, Yin and Qi, Charles R and Yan, Xinchen and Ettinger, Scott and Anguelov, Dragomir},
+  journal={arXiv preprint arXiv:2210.08061},
+  year={2022}
+}
+
+<br><br>
+
+<!-- LidarNAS -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/lidarnas.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/2210.05018">LidarNAS: Unifying and Searching Neural Architectures for 3D Point Clouds</a></b>, <i>ECCV 2022</i><br>
+Chenxi Liu, Zhaoqi Leng, Pei Sun, Shuyang Cheng, <b>Charles R. Qi</b>, Yin Zhou, Mingxing Tan, Dragomir Anguelov<br>
+
+<p>This paper proposes a unified framework for NAS of deep nets for 3D point clouds, providing novel perspectives to understand the relationships among many popular network architectures.</p>
+
+<a href="https://arxiv.org/pdf/2210.05018.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('LidarNAS'))">bibtex</a>
+<br><br>
+<pre><p id="LidarNAS" style="font:18px; display: none">
+@article{liu2022lidarnas,
+  title={LidarNAS: Unifying and Searching Neural Architectures for 3D Point Clouds},
+  author={Liu, Chenxi and Leng, Zhaoqi and Sun, Pei and Cheng, Shuyang and Qi, Charles R and Zhou, Yin and Tan, Mingxing and Anguelov, Dragomir},
+  journal={arXiv preprint arXiv:2210.05018},
+  year={2022}
+}
+
+<br><br>
+
+<!-- Lidar RIDDLE -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/riddle.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/pdf/2206.01738.pdf">RIDDLE: Lidar Data Compression with Range Image Deep Delta Encoding</a></b>, <i>CVPR 2022</i><br>
+Xuanyu Zhou*, <b>Charles R. Qi</b>*, Yin Zhou, Dragomir Anguelov (*: equal contribution)<br>
+
+<p>As LiDAR sensors become more powerful (higher resolutions), the data storage and transmission costs grow quickly. This paper proposes a state-of-the-art method for LiDAR range image compression.</p>
+
+<a href="https://arxiv.org/pdf/2206.01738.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('RIDDLE'))">bibtex</a>
+<br><br>
+<pre><p id="RIDDLE" style="font:18px; display: none">
+@inproceedings{zhou2022riddle,
+  title={RIDDLE: Lidar Data Compression with Range Image Deep Delta Encoding},
+  author={Zhou, Xuanyu and Qi, Charles R and Yin, Zhou and Anguelov, Dragomir},
+  journal={Proc. Computer Vision and Pattern Recognition (CVPR), IEEE},
+  year={2022}
+}
+
+<!-- MultiClass -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/multi_class.jpg" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/pdf/2205.05703.pdf">Multi-Class 3D Object Detection with Single-Class Supervision</a></b>, <i>ICRA 2022</i><br>
+Mao Ye, Chenxi Liu, Maoqing Yao, Weiyue Wang, Zhaoqi Leng, <b>Charles R. Qi</b>, Dragomir Anguelov<br>
+
+<p>Train multi-class 3D object detectors with single-class labels on disjoint data samples (e.g. some frames have labels for vehicles and some frames have labels for pedestrians).</p>
+
+<a href="https://arxiv.org/pdf/2205.05703.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('MULTI_CLASS'))">bibtex</a>
+<br><br>
+<pre><p id="MULTI_CLASS" style="font:18px; display: none">
+@article{ye2022multi,
+  title={Multi-Class 3D Object Detection with Single-Class Supervision},
+  author={Ye, Mao and Liu, Chenxi and Yao, Maoqing and Wang, Weiyue and Leng, Zhaoqi and Qi, Charles R and Anguelov, Dragomir},
+  journal={arXiv preprint arXiv:2205.05703},
+  year={2022}
+}
+
+<!-- Egocentric -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/egocentric.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://openreview.net/pdf?id=OMNRFw1fX3a">Revisiting 3D Object Detection From an Egocentric Perspective</a></b>, <i>Neurips 2021</i><br>
+Boyang Deng, <b>Charles R. Qi</b>, Mahyar Najibi, Thomas Funkhouser, Yin Zhou, Dragomir Anguelov<br>
+
+<p>We revisit the way we evaluate 3D object detection under the context of autonomous driving; and propose a new metric bsaed on support distances and a new shape representation: amodal contours.</p>
+
+<a href="https://openreview.net/pdf?id=OMNRFw1fX3a">paper</a> / <a href="javascript:hideshow(document.getElementById('EGOCENTRIC'))">bibtex</a>
+<br><br>
+<pre><p id="EGOCENTRIC" style="font:18px; display: none">
+@inproceedings{deng2021revisiting,
+  title={Revisiting 3D Object Detection From an Egocentric Perspective},
+  author={Deng, Boyang and Qi, Charles R and Najibi, Mahyar and Funkhouser, Thomas and Zhou, Yin and Anguelov, Dragomir},
+  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+  year={2021}
+}
+
+<!-- SPG -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/spg.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/2108.06709">SPG: Unsupervised Domain Adaptation for 3D Object Detection via Semantic Point Generation</a></b>, <i>ICCV 2021</i><br>
+Qiangeng Xu, Yin Zhou, Weiyue Wang, <b>Charles R. Qi</b>, Dragomir Anguelov<br>
+
+<p>We propose a network to complete object's geometry by semantic point generation, achieving significant improvments on the out-of-domain data (with rainy weather) and state of the art on KITTI.</p>
+
+<a href="https://arxiv.org/pdf/2108.06709.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('SPG'))">bibtex</a>
+<br><br>
+<pre><p id="SPG" style="font:18px; display: none">
+@inproceedings{xu2021spg,
+  title={SPG: Unsupervised Domain Adaptation for 3D Object Detection via Semantic Point Generation},
+  author={Xu, Qiangeng and Zhou, Yin and Wang, Weiyue and Qi, Charles R and Anguelov, Dragomir},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={15446--15456},
+  year={2021}
+}
+
+<!-- Motion Dataset -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/motion_dataset.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/2104.10133">Large Scale Interactive Motion Forecasting for Autonomous Driving : The Waymo Open Motion Dataset</a></b>, <i>ICCV 2021</i><br>
+S. Ettinger, S. Cheng, B. Caine, C. Liu, H. Zhao, S. Pradhan, Y. Chai, B. Sapp, <b>Charles R. Qi</b>, Y. Zhou, Z. Yang, A. Chouard, P. Sun, J. Ngiam, V. Vasudevan, A. McCauley, J. Shlens, D. Anguelov<br>
+
+<p>A motion forecasting dataset with 100,000 scenes, each 20 seconds long at 10 Hz, more than 570 hours of unique data over 1750 km of roadways. 3D maps and high qualtity auto labels are provided. We hope that this new large-scale interactive motion dataset will provide new opportunities for advancing research in motion forecasting and autonomous driving.</p>
+
+<a href="https://arxiv.org/pdf/2104.10133.pdf">paper</a> / <a href="https://waymo.com/open/data/motion/">dataset</a> / <a href="javascript:hideshow(document.getElementById('MOTION_DATASET'))">bibtex</a>
+<br><br>
+<pre><p id="MOTION_DATASET" style="font:18px; display: none">
+@article{ettinger2021large,
+  title={Large Scale Interactive Motion Forecasting for Autonomous Driving: The Waymo Open Motion Dataset},
+  author={Ettinger, Scott and Cheng, Shuyang and Caine, Benjamin and Liu, Chenxi and Zhao, Hang and Pradhan, Sabeek and Chai, Yuning and Sapp, Ben and Qi, Charles and Zhou, Yin and others},
+  journal={arXiv preprint arXiv:2104.10133},
+  year={2021}
+}
+
+
+<!-- Offboard Detection -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/offboard_detection.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/2103.05073">Offboard 3D Object Detection from Point Cloud Sequences</a></b>, <i>CVPR 2021</i><br>
+<b>Charles R. Qi</b>, Yin Zhou, Mahyar Najibi, Pei Sun, Khoa Vo, Boyang Deng, Dragomir Anguelov<br>
+
+<p>While current 3D object recognition research mostly focuses on the real-time, onboard scenario, there are many offboard use cases of perception that are largely under-explored, such as using machines to automatically generate high-quality 3D labels. In this paper, we propose a novel offboard 3D object detection pipeline using point cloud sequence data.</p>
+
+<p>This work was used to <i>auto label</i> the <a href="https://waymo.com/open/data/motion/">Waymo Motion Dataset</a>. Feel free to check it out!</p>
+
+<a href="https://arxiv.org/pdf/2103.05073.pdf">paper</a> / <a href="https://blog.waymo.com/2021/03/expanding-waymo-open-dataset-with-interactive-scenario-data-and-new-challenges.html">blog post</a> / <a href="javascript:hideshow(document.getElementById('OFFBOARD_DETECTION'))">bibtex</a> / <a href="https://www.youtube.com/watch?v=hyTMyZgWcFY">talk</a>
+<pre><p id="OFFBOARD_DETECTION" style="font:18px; display: none">
+@article{qi2021offboard,
+  title={Offboard 3D Object Detection from Point Cloud Sequences},
+  author={Qi, Charles R and Zhou, Yin and Najibi, Mahyar and Sun, Pei and Vo, Khoa and Deng, Boyang and Anguelov, Dragomir},
+  journal={arXiv preprint arXiv:2103.05073},
+  year={2021}
+}
+
+<p></pre>
+</p></td>
+</tr>
+
+<tr><td><br></td></tr>
+
+<!-- PointContrast -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/pointcontrast.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/pdf/2007.10985">PointContrast: Unsupervised Pre-training for 3D Point Cloud Understanding</a></b>, <font color="#d22d1d">Spotlight</font>, <i>ECCV 2020</i><br>
+Saining Xie, Jiatao Gu, Demi Guo, <b>Charles R. Qi</b>, Leonidas J. Guibas, Or Litany<br>
+
+<p>Local contrastive learning for 3D representation learning. The unsupervisely learned representation can generalize across tasks and helps improve severl high-level semantic understanding problems rangining from semgentation to detection on six different datasets.</p>
+
+<a href="https://arxiv.org/pdf/2007.10985.pdf">paper</a> / <a href="https://github.com/facebookresearch/PointContrast">code</a> / <a href="javascript:hideshow(document.getElementById('POINTCONTRAST'))">bibtex</a>
+<pre><p id="POINTCONTRAST" style="font:18px; display: none">
+@article{xie2020pointcontrast,
+  title={PointContrast: Unsupervised Pre-training for 3D Point Cloud Understanding},
+  author={Xie, Saining and Gu, Jiatao and Guo, Demi and Qi, Charles R and Guibas, Leonidas J and Litany, Or},
+  journal={arXiv preprint arXiv:2007.10985},
+  year={2020}
+}
+
+<p></pre>
+</p></td>
+</tr>
+
+<tr><td><br></td></tr>
+
+
+<!-- Image VoteNet -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/imvotenet.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/2001.10692">ImVoteNet: Boosting 3D Object Detection in Point Clouds with Image Votes</a></b>, <i>CVPR 2020</i><br>
+<b>Charles R. Qi</b><sup>*</sup>, Xinlei Chen<sup>*</sup>, Or Litany, Leonidas J. Guibas (<sup>*</sup>: equal contribution)<br>
+
+<p>Extensions of VoteNet to leverage RGB images. By lifting 2D image votes to 3D, RGB images can provide strong geometric cues for 3D object localization and pose estimation, while their textures and colors provide semantic cues. A special multi-tower training scheme also makes the 2D-3D feature fusion more effective.</p>
+
+<a href="https://arxiv.org/pdf/2001.10692.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('IMVOTENET'))">bibtex</a> / <a href="https://github.com/facebookresearch/imvotenet">code</a>
+<pre><p id="IMVOTENET" style="font:18px; display: none">
+@article{qi2020imvotenet,
+  title={ImVoteNet: Boosting 3D Object Detection in Point Clouds with Image Votes},
+  author={Qi, Charles R and Chen, Xinlei and Litany, Or and Guibas, Leonidas J},
+  journal={arXiv preprint arXiv:2001.10692},
+  year={2020}
+}
+<p></pre>
+</p></td>
+</tr>
+
+<tr><td><br></td></tr>
+
+
+<!-- Deep Hough Voting -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/votenet.jpg" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/1904.09664">Deep Hough Voting for 3D Object Detection in Point Clouds</a></b>, <font color="#d22d1d">Oral Presentation</font>, <i>ICCV 2019</i><br>
+<b>Charles R. Qi</b>, Or Litany, Kaiming He, Leonidas J. Guibas<br>
+
+<p><font color="#d22d1d"><b>Best Paper Award Nomination</b></font> (one of the seven among 1,075 accepted papers) [<a href="http://iccv2019.thecvf.com/program/main_conference">link</a>]
+<p>We show a revive of generalize Hough voting in the era of deep learning for the task of 3D object detection in point clouds. Our voting-based detection network (VoteNet) is both fast and top performing.</p>
+<a href="https://arxiv.org/abs/1904.09664.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('VOTENET'))">bibtex</a> / <a href="https://github.com/facebookresearch/votenet">code</a> / <a href="https://youtu.be/2ntDYowHbZs?t=4585">talk</a>
+<pre><p id="VOTENET" style="font:18px; display: none">
+@article{qi2019deep,
+  title={Deep Hough Voting for 3D Object Detection in Point Clouds},
+  author={Qi, Charles R and Litany, Or and He, Kaiming and Guibas, Leonidas J},
+  journal={arXiv preprint arXiv:1904.09664},
+  year={2019}
+}
+<p></pre>
+</p></td>
+</tr>
+
+<tr><td><br></td></tr>
+
+
+<!-- KPConv -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/kpconv.png" width="250" height="130" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/1904.08889">KPConv: Flexible and Deformable Convolution for Point Clouds</a></b>, <i>ICCV 2019</i><br>
+Hugues Thomas, <b>Charles R. Qi</b>, Jean-Emmanuel Deschaud, Beatriz Marcotegui, Francois Goulette, Leonidas J. Guibas<br>
+<p>Proposed a point centric way for deep learning on 3D point clouds with kernel point convolution (KPConv) where we define a convolution kernel as a set of spatially localized and deformable points.</p>
+<a href="https://arxiv.org/abs/1904.08889.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('KPCONV'))">bibtex</a> / <a href="https://github.com/HuguesTHOMAS/KPConv">code</a>
+<pre><p id="KPCONV" style="font:18px; display: none">
+@article{thomas2019kpconv,
+  title={KPConv: Flexible and Deformable Convolution for Point Clouds},
+  author={Thomas, Hugues and Qi, Charles R, Deschaud, Jean-Emmanuel and Marcotegui, Beatriz and Goulette, Francois and Guibas, Leonidas J},
+  journal={arXiv preprint arXiv:1904.08889},
+  year={2019}
+}
+<p></pre>
+</p></td>
+</tr>
+
+<tr><td><br></td></tr>
+<!-- 3D ADV -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/3d_adv.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/1809.07016">Generating 3D Adversarial Point Clouds</a></b>, <i>CVPR 2019</i><br>
+Chong Xiang, <b>Charles R. Qi</b>, Bo Li<br>
+<p>Proposed several novel algorithms to craft adversarial point clouds against 3D deep learning models with adversarial points perturbation and adversarial points generation.</p>
+<a href="https://arxiv.org/abs/1809.07016.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('3DADV'))">bibtex</a> / <a href="https://github.com/xiangchong1/3d-adv-pc">code</a>
+<pre><p id="3DADV" style="font:18px; display: none">
+@article{xiang2019adv,
+  title={Generating 3D Adversarial Point Clouds},
+  author={Xiang, Chong and and Qi, Charles R and Li, Bo},
+  journal={Proc. Computer Vision and Pattern Recognition (CVPR), IEEE},
+  year={2019}
+}
+<p></pre>
+</p></td>
+</tr>
+
+<tr><td><br></td></tr>
+
+
+<!-- FLOWNET3D -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/flownet3d.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/1806.01411">FlowNet3D: Learning Scene Flow in 3D Point Clouds</a></b>, <i>CVPR 2019</i><br>
+Xingyu Liu<sup>*</sup>, <b>Charles R. Qi</b><sup>*</sup>, Leonidas Guibas (<sup>*</sup>: equal contribution)<br>
+<p>Proposed a novel deep neural network that learns scene flow from point clouds in an end-to-end fashion.</p>
+<a href="https://arxiv.org/abs/1806.01411.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('flownet3d'))">bibtex</a> / <a href="https://github.com/xingyul/flownet3d">code</a>
+<pre><p id="flownet3d" style="font:18px; display: none">
+@article{liu2019flownet3d,
+  title={FlowNet3D: Learning Scene Flow in 3D Point Clouds},
+  author={Liu, Xingyu and and Qi, Charles R and Guibas, Leonidas J},
+  journal={Proc. Computer Vision and Pattern Recognition (CVPR), IEEE},
+  year={2019}
+}
+<p></pre>
+</p></td>
+</tr>
+
+<tr><td><br></td></tr>
+
+
+<!-- HIDDEN DIMENSIONS -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/hidden_dimensions.jpg" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/1802.04924">Exploring Hidden Dimensions in Parallelizing Convolutional Neural Networks</a></b>, <i>ICML 2018</i><br>
+Zhihao Jia, Sina Lin, <b>Charles R. Qi</b>, Alex Aiken<br>
+<p> We studied how to parallelize training of deep convolutional networks beyond simple data or model parallelism. Proposed a layer-wise parallelism that allows each layer in a network to use an individual parallelization strategy.</p>
+<a href="https://arxiv.org/abs/1802.04924.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('HiddenDimensions'))">bibtex</a> 
+<pre><p id="HiddenDimensions" style="font:18px; display: none">
+@article{jia2018exploring,
+  title={Exploring Hidden Dimensions in Parallelizing Convolutional Neural Networks},
+  author={Jia, Zhihao and Lin, Sina and Qi, Charles R and Aiken, Alex},
+  journal={arXiv preprint arXiv:1802.04924},
+  year={2018}
+}
+<p></pre>
+</p></td>
+</tr>
+
+<tr><td><br></td></tr>
+
+
+<!-- FRUSTUM POINTNETS-->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/frustum_pointnets.jpg" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/1711.08488">Frustum PointNets for 3D Object Detection from RGB-D Data</a></b>, <i>CVPR 2018</i><br>
+<b>Charles R. Qi</b>, Wei Liu, Chenxia Wu, Hao Su, and Leonidas J. Guibas<br>
+<p>Proposed a novel framework for 3D object detection with image region proposals (lifted to 3D frustums) and PointNets. Our method is simple, efficient and effective, ranking at <i>first place</i> for <a href="http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d">KITTI 3D object detection benchmark</a> on all categories (11/27/2017).</p>
+<a href="https://arxiv.org/abs/1711.08488">paper</a> / <a href="javascript:hideshow(document.getElementById('FrustumPointNets'))">bibtex</a> / <a href="http://github.com/charlesq34/frustum-pointnets">code</a> / <a href="http://stanford.edu/~rqi/frustum-pointnets/">website</a>
+<pre><p id="FrustumPointNets" style="font:18px; display: none">
+@article{qi2017frustum,
+  title={Frustum PointNets for 3D Object Detection from RGB-D Data},
+  author={Qi, Charles R and Liu, Wei and Wu, Chenxia and Su, Hao and Guibas, Leonidas J},
+  journal={Proc. Computer Vision and Pattern Recognition (CVPR), IEEE},
+  year={2018}
+}
+<p></pre>
+</p></td>
+</tr>
+
+<tr><td><br></td></tr>
+
+
+<!-- POINTNET2-->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/pointnet2.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/1706.02413">PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space</a></b>, <i>NIPS 2017</i><br>
+<b>Charles R. Qi</b>, Li Yi, Hao Su, and Leonidas J. Guibas<br>
+<p>Proposed a hierarchical neural network on point sets that captures local context. Compared with PointNet, PointNet++ achieves better performance and generalizability in complex scenes and is able to deal with non-uniform sampling density.</p>
+<a href="https://arxiv.org/abs/1706.02413">paper</a> / <a href="javascript:hideshow(document.getElementById('PointNet2'))">bibtex</a> / <a href="https://github.com/charlesq34/pointnet2">code</a> / <a href="http://stanford.edu/~rqi/pointnet2/">website</a> / <a href="papers/pointnet2_poster.pdf">poster</a>
+<pre><p id="PointNet2" style="font:18px; display: none">
+@article{qi2017pointnetplusplus,
+  title={PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space},
+  author={Qi, Charles R and Yi, Li and Su, Hao and Guibas, Leonidas J},
+  journal={arXiv preprint arXiv:1706.02413},
+  year={2017}
+}
+<p></pre>
+</p></td>
+</tr>
+
+<tr><td><br></td></tr>
+
+
+<!-- POINTNET -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/pointnet.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/1612.00593">PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation</a></b>, <font color="#d22d1d">Oral Presentation</font>, <i>CVPR 2017</i><br>
+<b>Charles R. Qi</b><sup>*</sup>, Hao Su<sup>*</sup>, Kaichun Mo, and Leonidas J. Guibas (<sup>*</sup>: equal contribution)
+<p>Proposed novel neural networks to directly consume an unordered point cloud as input, without converting to other 3D representations such as voxel grids first. Rich theoretical and empirical analyses are provided.</p>
+<a href="https://arxiv.org/abs/1612.00593">paper</a> / <a href="javascript:hideshow(document.getElementById('PointNet'))">bibtex</a> / <a href="https://github.com/charlesq34/pointnet">code</a> / <a href="http://stanford.edu/~rqi/pointnet/">website</a> / <a href="https://www.youtube.com/watch?v=Cge-hot0Oc0">presentation video</a>
+<pre><p id="PointNet" style="font:18px; display: none">
+@article{qi2017pointnet,
+  title={PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation},
+  author={Qi, Charles R and Su, Hao and Mo, Kaichun and Guibas, Leonidas J},
+  journal={Proc. Computer Vision and Pattern Recognition (CVPR), IEEE},
+  year={2017}
+}
+<p></pre>
+</p></td>
+</tr>
+
+<tr><td><br></td></tr>
+
+<!-- SHAPE_COMPLETION -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/shape_completion.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/1612.00101">Shape Completion using 3D-Encoder-Predictor CNNs and Shape Synthesis</a></b>, <font color="#d22d1d">Spotlight Presentation</font>, <i>CVPR 2017</i><br>
+Angela Dai, <b>Charles R. Qi</b>, Matthias Niessner
+<p>A data-driven approach to complete partial 3D shapes through a combination of volumetric deep neural networks and 3D shape synthesis.</p>
+<a href="https://arxiv.org/pdf/1612.00101.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('ShapeCompletion'))">bibtex</a> / <a href="http://graphics.stanford.edu/projects/cnncomplete/">website (code & data available)</a>
+<pre><p id="ShapeCompletion" style="font:18px; display: none">
+@article{dai2017complete,
+  title={Shape Completion using 3D-Encoder-Predictor CNNs and Shape Synthesis},
+  author={Dai, Angela and Qi, Charles Ruizhongtai and Nie{\ss}ner, Matthias},
+  journal={Proc. Computer Vision and Pattern Recognition (CVPR), IEEE},
+  year={2017}
+}
+<p></pre>
+</p></td>
+</tr>
+
+<tr><td><br></td></tr>
+
+<!-- VOLUMETRIC CNN -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/volumetric_cnn.jpg" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/1604.03265">Volumetric and Multi-View CNNs for Object Classification on 3D Data</a></b>, <font color="#d22d1d">Spotlight Presentation</font>, <i>CVPR 2016</i><br>
+<b>Charles R. Qi</b><sup>*</sup>, Hao Su<sup>*</sup>, Matthias Niessner, Angela Dai, Mengyuan Yan, and Leonidas J. Guibas (<sup>*</sup>: equal contribution)
+<p>Novel architectures for 3D CNNs that take volumetric or multi-view representations as input.</p>
+<a href="https://arxiv.org/abs/1604.03265">paper</a> / <a href="javascript:hideshow(document.getElementById('VolumetricCNN'))">bibtex</a> / <a href="https://github.com/charlesq34/3dcnn.torch">code</a> / <a href="http://graphics.stanford.edu/projects/3dcnn/">website</a>  / <a href="papers/volumetric_cnn_cvpr16_supp.pdf">supp</a> / <a href="https://www.youtube.com/watch?v=bE7jzHJiQWw">presentation video</a>
+<pre><p id="VolumetricCNN" style="font:18px; display: none">
+@inproceedings{qi2016volumetric,
+  author = {Charles Ruizhongtai Qi and Hao Su and Matthias Nie{\ss}ner and 
+    Angela Dai and Mengyuan Yan and Leonidas Guibas},
+  title = {Volumetric and Multi-View CNNs for Object Classification on 3D Data},
+  booktitle = {Proc. Computer Vision and Pattern Recognition (CVPR), IEEE},
+  year = {2016}
+}
+<p></pre>
+</p></td>
+</tr>
+
+<tr><td><br></td></tr>
+
+<!-- FPNN -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/fpnn.png" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://arxiv.org/abs/1605.06240">FPNN: Field Probing Neural Networks for 3D Data</a></b>, <i>NIPS 2016</i><br>
+Yangyan Li, Soeren Pirk, Hao Su, <b>Charles R. Qi</b>, and Leonidas J. Guibas
+<p>A very efficient 3D deep learning method for volumetric data processing that takes advantage of data sparsity in 3D fields.</p>
+<a href="papers/fpnn.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('FPNN'))">bibtex</a> / <a href="https://github.com/yangyanli/FPNN">code</a> / <a href="http://yangyanli.github.io/FPNN/">website</a>
+<pre><p id="FPNN" style="font:18px; display: none">
+@article{li2016fpnn,
+  title={FPNN: Field Probing Neural Networks for 3D Data},
+  author={Li, Yangyan and Pirk, Soeren and Su, Hao and Qi, Charles R and Guibas, Leonidas J},
+  journal={arXiv preprint arXiv:1605.06240},
+  year={2016}
+}
+<p></pre>
+</p></td>
+</tr>
+
+<tr><td><br></td></tr>
+
+
+<!-- DEEP EMBEDDING -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/joint_embedding.jpg" width="250" alt="" style="border-style: none" align="top"></p></td>
+<td width="75%" valign="top"><p>
+<b><a href="https://shapenet.cs.stanford.edu/projects/JointEmbedding/">Joint Embeddings of Shapes and Images via CNN Image Purification</a></b>, <i>SIGGRAPH Asia 2015</i><br>
+Yangyan Li<sup>*</sup>, Hao Su<sup>*</sup>, <b>Charles R. Qi</b>, Noa Fish, Daniel Cohen-Or, and Leonidas J. Guibas (<sup>*</sup>: equal contribution)
+<p>Cross-modality learning of 3D shapes and 2D images by neural networks. A joint embedding space that is sensitive to 3D geometry difference but agnostic to other nuisances is constructed.</p>
+<a href="https://shapenet.cs.stanford.edu/projects/JointEmbedding/JointEmbedding.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('JointEmbeddingBib'))">bibtex</a> / <a href="http://shapenet.github.io/JointEmbedding/">code</a> / <a href="https://shapenet.cs.stanford.edu/projects/JointEmbedding/">website</a> / <a href="https://shapenet.cs.stanford.edu/shapenet_brain/app_joint_embedding/">live demo</a>
+<pre><p id="JointEmbeddingBib" style="font:18px; display: none">
+@article{li2015jointembedding,
+    Author = {Li, Yangyan and Su, Hao and Qi, Charles Ruizhongtai and Fish, Noa
+        and Cohen-Or, Daniel and Guibas, Leonidas J.},
+    Title = {Joint Embeddings of Shapes and Images via CNN Image Purification},
+    Journal = {ACM Trans. Graph.},
+    Year = {2015}
+}
+<p></pre>
+</p></td>
+</tr>
+
+<tr><td><br></td></tr>
+
+<!-- VIEWPOINT -->
+<tr>
+<td width="25%" valign="top"><p><img src="papers/render_for_cnn.jpg" width="250" alt=""></p></td>
+<td width="75%" valign="top">
+<p>
+<b><a href="papers/render_for_cnn_iccv15.pdf">Render for CNN: Viewpoint Estimation in Images Using CNNs Trained with Rendered 3D Model Views</a></b>, <font color="#d22d1d">Oral Presentation</font>, <i>ICCV 2015</i><br>
+Hao Su<sup>*</sup>, <b>Charles R. Qi</b><sup>*</sup>, Yangyan Li, Leonidas J. Guibas (<sup>*</sup>equal contribution)
+<p>Pioneering work that shows large-scale synthetic data rendered from virtual world may greatly benefit deep learning to work in real world. Deliver a state-of-the-art viewpoint estimator.</p>
+<a href="https://shapenet.cs.stanford.edu/projects/RenderForCNN/resources/RenderForCNN.pdf">paper</a> / <a href="javascript:hideshow(document.getElementById('RenderForCNNBib'))">bibtex</a> / <a href="https://github.com/ShapeNet/RenderForCNN">code</a> / <a href="https://shapenet.cs.stanford.edu/projects/RenderForCNN/">website</a> / <a href="http://videolectures.net/iccv2015_su_qi_viewpoint_estimation/">presentation video</a>
+<pre><p id="RenderForCNNBib" style="font:18px; display: none">
+@InProceedings{Su_2015_ICCV,
+    Title={Render for CNN: Viewpoint Estimation in Images Using CNNs Trained with Rendered 3D Model Views},
+    Author={Su, Hao and Qi, Charles R. and Li, Yangyan and Guibas, Leonidas J.},
+    Booktitle={The IEEE International Conference on Computer Vision (ICCV)},
+    month = {December},
+    Year= {2015}
+}<p></pre>
+</p></td>
+</tr>
+</table>
+
+</ul>
+</div>
+<br>
+
+<a name="education"></a>
+<div class="section">
+<h3>Education</h3>
+<ul>
+<li>2013.9 - 2018.9: Ph.D. in Electrical Engineering, Stanford University (<a href=https://searchworks.stanford.edu/view/12741586>PhD Dissertation</a>)</li>
+<li>2013.9 - 2016.3: M.S. in Electrical Engineering, Stanford University</li>
+<li>2009.9 - 2013.7: B.Eng. from Tsinghua University</li>
+<li>2011.9 - 2012.1: Exchange student at Aalto University (previously as Helsinki University of Technology)</li>
+</ul>
+</div>
+<br>
+
+<a name="experiences"></a>
+<div class="section">
+<h3>Experiences</h3>
+<ul>
+<li>2019.10 - Present: Research Scientist and Manager at Waymo.</li>
+<li>2018.10 - 2019.9: Postdoctoral researcher at Facebook AI Research.</li>
+<li>2017.6 - 2017.9: Software engineer intern at Nuro Inc. (an AI and robotics startup)</li>
+<li>2016.6 - 2016.9: Software engineer intern at Google[x] (self-driving car team)</li>
+<li>2012.11 - 2013.5: Research intern at Microsoft Research Asia</li>
+</ul>
+
+<ul>
+<li>Area Chair of ICCV 2023, 3DV 2024.</li>
+</ul>
+</div>
+<br>
+
+<!--
+<a name="service"></a>
+<div class="section">
+<h3>Professional service</h3>
+<ul>
+<li> Organizing committee:
+    <ul>
+        <li> <a href="http://iccv2019.thecvf.com/">Tutorial on 3D Deep Learning and Applications in Autonomous Driving</a> at ICCV 2019, Seoul.</li>
+        <li> <a href="http://3ddl.stanford.edu">Tutorial on 3D Deep Learning</a> at CVPR 2017, Honolulu.</li>
+    </ul>
+<li> Program committee/reviewing:
+    <ul>
+        <li> Conference: CVPR, ICCV, NeurIPS, 3DV, ICRA, IROS, SIGGRAPH Asia, SIGGRAPH</li>
+        <li> Journal: TPAMI, TVCG, TVCJ, ToG, TITS, TIP, MM
+    </ul>
+</div>
+-->
+
+<a name="talks"></a>
+<div class="section">
+<h3>Talks</h3>
+<ul>
+<li>
+Invited Speaker. <i>Offboard Perception for Autonomous Driving</i>. 2021.
+<ul>
+<li>
+<a href="https://sites.google.com/view/3d-dlad-v3-iv2021/schedule">3rd Workshop for Autnomous Driving, IV 2021</a> <a href="https://www.youtube.com/watch?v=hyTMyZgWcFY">[video]</a>
+<li>
+<a href="6th Workshop on Benchmarking Multi-Target Tracking">6th Workshop on Benchmarking Multi-Target Tracking, ICCV 2021</a> <a href="https://www.youtube.com/watch?v=jaVIlNKSYvI">[video]</a>
+<li>
+<a href="https://www.adp3.org/invited-talks#h.2nmnbhpzoevv">Workshop on Autonomous Driving: Perception, Prediction and Planning, CVPR 2021</a> <a href="https://youtu.be/COgEQuqTAug?t=14028">[video]</a>
+</ul>
+
+<li>
+Invited Speaker and organizer. <i>Deep Learning on Point Cloud and Other 3D Forms</i>. <a href='http://3ddl.stanford.edu'>3D Deep Learning Tutorial</a> at CVPR 2017, Honolulu. <a href="https://www.youtube.com/watch?v=8CenT_4HWyY">[video]</a>
+<li>
+Guest Lecturer. <i>3D Object Detection: The History, Present and Future</i>. 2021. <a href="https://haosulab.github.io/ml-meets-geometry/WI22/index.html">CSE219: Machine Learning Meets Geometry, UC San Diego</a>. <a href="https://drive.google.com/file/d/10rJbk3VNRc2Uah5OQsRjFGnyILu7awQj/view?usp=sharing">[slides]</a>
+<li>
+Invited Speaker. <i>3D Object Recognition in Point CLouds</i>. 2020. <a href="http://vision.stanford.edu/">Stanford Vision and Learning Lab</a> <a href="https://drive.google.com/file/d/10rJbk3VNRc2Uah5OQsRjFGnyILu7awQj/view?usp=sharing">[slides]</a>
+
+<li>
+(&#20013;&#25991;) Invited Speaker. <i>The Development and Future of 3D Object Detection</i>. 2021. <a href="https://www.shenlanxueyuan.com/open/course/97">Shenlan Xueyuan</a>. <a href="https://www.bilibili.com/video/BV1wA411p7FZ?from=search&seid=5827865779459596600">[video]</a>
+<li>
+(&#20013;&#25991;) Invited Speaker. <i>Frustum PointNets for 3D Object Detection from RGB-D Data</i>. 2019. <a href="http://games-cn.org/games-webinar-2019117-82/">GAMES Webinar Series 82</a>. <a href="https://v.qq.com/x/page/i0834yyd0jg.html?">[video]</a> <a href="https://slides.games-cn.org/pdf/GAMES201982%E7%A5%81%E8%8A%AE%E4%B8%AD%E5%8F%B0.pdf">[slides]</a>
+<li>
+(&#20013;&#25991;) Invited Speaker. <i>Deep Hough Voting for 3D Object Detection in Point Clouds</i>. 2019. <a href="http://games-cn.org/games-webinar-20191205-121/">GAMES Webinar Series 121</a>. <a href="https://v.qq.com/x/page/v3031ehsz52.html">[video]</a> <a href="https://slides.games-cn.org/pdf/Games2019121CharlesQi.pdf">[slides]</a>
+<li>
+(&#20013;&#25991;) Invited Speaker. <i>Deep Learning on Point Clouds for 3D Scene Understanding</i>. 2018. <a href="https://www.techbeat.net/">Jiangmen TechBeat</a>. <a href="https://www.youtube.com/watch?v=Ew24Rac8eYE">[video]</a> <a href="https://www.techbeat.net/talk-info?id=254">[slides]</a>
+
+<li>
+Guest Lecturer. Spring 2017-18: <a href="http://cs233.stanford.edu">The Shape of Data: Geometric and Topological Data Analysis</a> at Stanford University.
+<li>
+Guest Lecturer. Spring 2016-17: <a href="http://graphics.stanford.edu/courses/cs468-17-spring/">Machine Learning for 3D Data</a> at Stanford University.
+<ul>
+</div>
+
+
+<!--
+<a name="teaching"></a>
+<div class="section">
+<h3>Teaching</h3>
+<ul>
+<li>
+Guest Lecturer. Spring 2017-18: <a href="http://cs233.stanford.edu">The Shape of Data: Geometric and Topological Data Analysis</a> at Stanford University.
+<li>
+Guest Lecturer. Spring 2016-17: <a href="http://graphics.stanford.edu/courses/cs468-17-spring/">Machine Learning for 3D Data</a> at Stanford University.
+<li>
+Organizer and invited speaker for <a href='http://3ddl.stanford.edu'>3D Deep Learning Tutorial</a> at CVPR 17, Honolulu.
+<li>
+Teaching Assistant. Winter 2014-15: <a href="http://web.stanford.edu/class/ee264/">Digital Signal Processing (EE264)</a> at Stanford University.
+<ul>
+<li>
+Our teaching experience has been summarized into a paper: <a href="papers/ee264_spw15.pdf">Teaching Digital Signal Processing with Stanford's Lab-in-a-Box</a>, 2015 IEEE Signal Processing and Signal Processing Education Workshop.
+</li>
+</ul>
+</li>
+</div>
+-->
+
+
+<hr/>
+<div id="footer" style="font-size:10">Charles Ruizhongtai Qi <i>Last updated: Jan, 2024</i></div>
+</body>
