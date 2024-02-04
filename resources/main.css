@@ -96,7 +96,7 @@ body {
 */
 
 
-/*
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -112,7 +112,30 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
-
+#dhead {
+    margin-top: 20px;
+}
+#dpic {
+    grid-column: span 5;
+    text-align: right;
+}
+#dpic img {
+    width: 240px;
+    height: 240px;
+    border-radius: 120px;
+}
+#ddesc {
+    padding-top: 40px;
+    padding-left: 20px;
+    grid-column: span 6;
+}
+.desc {
+    grid-column: span 10;
+    vertical-align: top;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
 .timespan {
     grid-column: span 1;
     font-size: 14px;
@@ -140,4 +163,33 @@ body {
     padding-left: 20px;
     padding-bottom: 20px;
 }
-*/
+h1 {
+    font-size: 34px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    font-weight: normal;
+    font-style: italic;
+    color: #999;
+    font-size: 18px;
+    padding: 0;
+    margin: 5px 0 10px 0;
+}
+@media (min-width: 992px) {
+    h2 {
+        max-width: 300px;
+    }
+}
+@media (max-width: 991px) {
+    #dpic {
+      grid-column: span 12;
+      text-align: center;
+    }
+    #ddesc {
+      grid-column: span 12;
+      padding-top: 20px;
+      text-align: center;
+    }
+}
