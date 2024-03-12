@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+# Jekyll
+gem 'jekyll', '~> 4.2.0'
+
+# This is a simple, straightforward theme for Jekyll
+gem 'minima', '~> 2.5'
+
+# For creating feed.xml
+gem 'jekyll-feed', '~> 0.12'
+
+gem 'webrick'
