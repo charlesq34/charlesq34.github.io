@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Charles Qi&apos;s Blog</title>
+    <description>Writings on AI, investment and life hacks.</description>
+    <link>http://localhost:4000/blog/</link>
+    <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 20 Mar 2024 22:48:00 -0700</pubDate>
+    <lastBuildDate>Wed, 20 Mar 2024 22:48:00 -0700</lastBuildDate>
+    <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Blogging with GitHub Pages and Jekyll</title>
+        <description>&lt;!--
+![name of the image](/blog/images/niuniu.jpg)
+--&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/images/niuniu.jpg&quot; alt=&quot;cat&quot; width=&quot;256&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-1-create-a-website-hosted-by-github-pages&quot;&gt;Step 1: Create a website hosted by GitHub Pages&lt;/h2&gt;
+&lt;p&gt;If you haven’t, follow the official &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt; to create a website. If you have a custom domain (like me), you can configure the custum domain to link to the GitHub hosted site, by following &lt;a href=&quot;https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site&quot;&gt;this tutorial&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-2-blogging-with-jekyll&quot;&gt;Step 2: Blogging with Jekyll&lt;/h2&gt;
+&lt;p&gt;I recommend you to first learn the basics about Jekyll &lt;a href=&quot;https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll&quot;&gt;here&lt;/a&gt;. In the default set up, GitHub will automatically build the HTML pages with Jekyll as well as host the blog for you. However, this set up requires Jekyll related files to be under the root folder of the repo, which prevents us from hosting &lt;strong&gt;both&lt;/strong&gt; the personal website and the blog.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, a workaround was proposed in &lt;a href=&quot;https://danpaz.me/blog/jekyll/2017/09/20/jekyll-in-subfolder.html&quot;&gt;this article&lt;/a&gt;. Instead of letting GitHub auto build the site for us, we can build the site offline and directly use the genearted HTML files for our website. To prevent the GitHub Pages from throwing a Jekyll build error, we need to create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.nojekyll&lt;/code&gt; file in the root folder as described &lt;a href=&quot;https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I recommend you to start the blog with an existing template/theme. There are many blog themes available on the Internet for free (for example &lt;a href=&quot;https://jekyllthemes.io/free&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;https://github.com/topics/jekyll-theme&quot;&gt;here&lt;/a&gt;). For me, I chose to reuse the &lt;a href=&quot;https://github.com/karpathy/karpathy.github.io&quot;&gt;theme&lt;/a&gt; built by &lt;a href=&quot;https://karpathy.ai/&quot;&gt;Andrej Karpathy&lt;/a&gt;, as I love Andrej’s blogging. You can checkout my GitHub &lt;a href=&quot;https://github.com/charlesq34/charlesq34.github.io&quot;&gt;repo&lt;/a&gt; to see the details about how I organize the files.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-3-write-your-first-blog&quot;&gt;Step 3: Write your first blog!&lt;/h2&gt;
+&lt;p&gt;Once you finish the first two steps, you are now ready to write your first blog.&lt;/p&gt;
+
+&lt;p&gt;To write a blog, it is as simple as adding a Markdown file to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; folder. For example:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd &amp;lt;path&amp;gt;/&amp;lt;username&amp;gt;.github.io/jekyll/_posts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Then use your favorite Markdown editor to create the blog .md file and add/save it to this folder.&lt;/p&gt;
+
+&lt;p&gt;To locally test the site, follow this official tutorial to install the needed tools and then run the following commands &lt;a href=&quot;https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll&quot;&gt;Testing your GitHub Pages site locally with Jekyll&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd &amp;lt;path&amp;gt;/&amp;lt;username&amp;gt;.github.io/jekyll/
+bundle exec jekyll build
+bundle exec jekyll serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Then you can view the site locally e.g. by going to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://127.0.0.1:4000/blog&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To let GitHub co-host your personal site and the blog, We will not let GitHub build the Jekyll online but rather directly use the Jekyll generated static HTML pages. To do that we create a virtual link from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blog&lt;/code&gt; folder to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder, such that when we go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blog/index.html&lt;/code&gt; it will call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_site/index.html&lt;/code&gt; where the later is generated by the Jekyll.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ln -sv jekyll/_site blog
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Finally, we add all the files in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_site&lt;/code&gt; to our repo. After commiting and pushing the code, your first blog will be online.&lt;/p&gt;
+
+&lt;p&gt;Happy blogging!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 Mar 2024 16:00:00 -0700</pubDate>
+        <link>http://localhost:4000/blog/2024/03/20/Hello-World/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2024/03/20/Hello-World/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
