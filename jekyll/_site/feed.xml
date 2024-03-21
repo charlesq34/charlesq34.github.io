@@ -3,10 +3,10 @@
   <channel>
     <title>Charles Qi&apos;s Blog</title>
     <description>Writings on AI, investment and life hacks.</description>
-    <link>http://localhost:4000/blog/</link>
-    <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 20 Mar 2024 22:48:00 -0700</pubDate>
-    <lastBuildDate>Wed, 20 Mar 2024 22:48:00 -0700</lastBuildDate>
+    <link>https://charlesrqi.com/blog/</link>
+    <atom:link href="https://charlesrqi.com/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 20 Mar 2024 22:55:07 -0700</pubDate>
+    <lastBuildDate>Wed, 20 Mar 2024 22:55:07 -0700</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -51,8 +51,8 @@ bundle exec jekyll serve
 &lt;p&gt;Happy blogging!&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Mar 2024 16:00:00 -0700</pubDate>
-        <link>http://localhost:4000/blog/2024/03/20/Hello-World/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2024/03/20/Hello-World/</guid>
+        <link>https://charlesrqi.com/blog/2024/03/20/Blogging-With-GitHub-Pages-And-Jekyll/</link>
+        <guid isPermaLink="true">https://charlesrqi.com/blog/2024/03/20/Blogging-With-GitHub-Pages-And-Jekyll/</guid>
         
         
       </item>
