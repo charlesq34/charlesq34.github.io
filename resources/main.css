@@ -39,6 +39,13 @@ a {
     justify-content: center;
 }
 
+.section-divider {
+    width: 840px;
+    max-width: calc(100% - 40px);
+    margin: 22px auto;
+    border-top: 1px solid #d8d8d8;
+}
+
 .mainsection {
     margin: 10px auto; /* Center the section horizontally */
     max-width: 900px; /* Max width to maintain the layout */
