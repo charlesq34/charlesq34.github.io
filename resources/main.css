@@ -139,18 +139,48 @@ body {
     color: #222;
 }
 @media (max-width: 991px) {
+    #dhead {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
     #dpic {
       grid-column: span 11;
       text-align: center;
     }
+    #dpic img {
+      width: 184px;
+      height: 184px;
+      border-radius: 92px;
+    }
     #ddesc {
       grid-column: span 11;
-      padding-top: 20px;
+      padding-top: 24px;
       padding-left: 0;
       text-align: center;
     }
     .profile-links {
+        margin-top: 22px;
         justify-content: center;
+        gap: 10px 18px;
+    }
+    .profile-links a {
+        font-size: 17px;
+    }
+    h1 {
+        font-size: 42px;
+        line-height: 1.05;
+    }
+    h2 {
+        font-size: 22px;
+        margin: 14px 0 12px 0;
+    }
+    .section-divider {
+        max-width: calc(100% - 56px);
+        margin: 26px auto;
+    }
+    .section {
+        max-width: calc(100% - 48px);
+        margin: 28px auto 10px;
     }
 }
 .desc {
